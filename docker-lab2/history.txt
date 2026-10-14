@@ -1,0 +1,26 @@
+IMAGE          CREATED         CREATED BY                                      SIZE      COMMENT
+8a3a4d0da4c2   4 hours ago     ENTRYPOINT ["gunicorn" "--bind" "0.0.0.0:800…   0B        buildkit.dockerfile.v0
+<missing>      4 hours ago     USER appuser                                    0B        buildkit.dockerfile.v0
+<missing>      4 hours ago     LABEL org.lab.login=kruchininaev org.lab.tok…   0B        buildkit.dockerfile.v0
+<missing>      4 hours ago     ARG LAB_TOKEN=602d943d2644242af68d11d14b83c5…   0B        buildkit.dockerfile.v0
+<missing>      4 hours ago     ARG LAB_LOGIN=kruchininaev                      0B        buildkit.dockerfile.v0
+<missing>      4 hours ago     HEALTHCHECK {Test:[CMD-SHELL python -c "impo…   0B        buildkit.dockerfile.v0
+<missing>      4 hours ago     ENV ROCKET_SIZE=Small                           0B        buildkit.dockerfile.v0
+<missing>      4 hours ago     ENV PORT=8000                                   0B        buildkit.dockerfile.v0
+<missing>      4 hours ago     RUN /bin/sh -c chown -R appuser:appuser /app…   16.4kB    buildkit.dockerfile.v0
+<missing>      4 hours ago     COPY app/ ./app/ # buildkit                     16.4kB    buildkit.dockerfile.v0
+<missing>      4 hours ago     COPY /usr/local/bin/ /usr/local/bin/ # build…   24.6kB    buildkit.dockerfile.v0
+<missing>      4 hours ago     COPY /usr/local/lib/python3.12/site-packages…   12.6MB    buildkit.dockerfile.v0
+<missing>      4 hours ago     RUN /bin/sh -c addgroup -S appuser && adduse…   41kB      buildkit.dockerfile.v0
+<missing>      4 hours ago     WORKDIR /app                                    8.19kB    buildkit.dockerfile.v0
+<missing>      14 months ago   CMD ["python3"]                                 0B        buildkit.dockerfile.v0
+<missing>      14 months ago   RUN /bin/sh -c set -eux;  for src in idle3 p…   16.4kB    buildkit.dockerfile.v0
+<missing>      14 months ago   RUN /bin/sh -c set -eux;   apk add --no-cach…   44MB      buildkit.dockerfile.v0
+<missing>      14 months ago   ENV PYTHON_SHA256=c30bb24b7f1e9a19b11b55a546…   0B        buildkit.dockerfile.v0
+<missing>      14 months ago   ENV PYTHON_VERSION=3.12.11                      0B        buildkit.dockerfile.v0
+<missing>      14 months ago   ENV GPG_KEY=7169605F62C751356D054A26A821E680…   0B        buildkit.dockerfile.v0
+<missing>      14 months ago   RUN /bin/sh -c set -eux;  apk add --no-cache…   2.98MB    buildkit.dockerfile.v0
+<missing>      14 months ago   ENV LANG=C.UTF-8                                0B        buildkit.dockerfile.v0
+<missing>      14 months ago   ENV PATH=/usr/local/bin:/usr/local/sbin:/usr…   0B        buildkit.dockerfile.v0
+<missing>      15 months ago   CMD ["/bin/sh"]                                 0B        buildkit.dockerfile.v0
+<missing>      15 months ago   ADD alpine-minirootfs-3.22.1-x86_64.tar.gz /…   8.98MB    buildkit.dockerfile.v0
